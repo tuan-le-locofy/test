@@ -1,0 +1,241 @@
+.symbolsIcon {
+  position: absolute;
+  height: 96.97%;
+  width: 99.82%;
+  top: 1.59%;
+  right: 0.18%;
+  bottom: 1.44%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.fickleflightLogo {
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  width: 174px;
+  height: 33px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.explore,
+.fickleflightLogo,
+.offers,
+.search {
+  position: relative;
+  cursor: pointer;
+}
+.offers,
+.search {
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  font-size: 14px;
+  font-family: Roboto;
+  color: #1262af;
+  text-align: left;
+  display: inline-block;
+}
+.offers {
+  color: #424242;
+}
+.navigationMenu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
+}
+.hamburgerMenuIcon {
+  display: none;
+}
+.hamburgerMenuIcon,
+.notificationBellIcon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.unsplashd1upkifd04aIcon {
+  border-radius: 38px;
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+}
+.accountSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.navigationRight {
+  justify-content: flex-end;
+  gap: 36px;
+}
+.navigationRight,
+.topContainer,
+.topHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.topContainer {
+  flex: 1;
+  justify-content: space-between;
+}
+.topHeader {
+  align-self: stretch;
+  background-color: #fff;
+  height: 77px;
+  padding: 22px 80px;
+  box-sizing: border-box;
+  justify-content: center;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  background: #fff;
+  text-align: left;
+  font-size: 14px;
+  color: #424242;
+  font-family: Roboto;
+}
+.recentlyBookedTitleChild,
+.results {
+  align-self: stretch;
+  position: relative;
+}
+.results {
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.recentlyBookedTitleChild {
+  max-width: 100%;
+  overflow: hidden;
+  height: 1px;
+  flex-shrink: 0;
+}
+.recentlyBookedTitle {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 14px;
+}
+.showMore1 {
+  position: relative;
+  line-height: 16px;
+}
+.iconBack {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.showMore {
+  align-self: stretch;
+  border-radius: 3px;
+  background-color: rgba(18, 98, 175, 0.06);
+  display: flex;
+  flex-direction: row;
+  padding: 7px 10px;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.bookingCards,
+.recentlyBooked {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.bookingCards {
+  align-self: stretch;
+  gap: 12px;
+  font-size: 12px;
+  color: #1262af;
+  font-family: Inter;
+}
+.recentlyBooked {
+  border-radius: 6px;
+  background-color: #fff;
+  width: 257px;
+  padding: 0 0 20px;
+  box-sizing: border-box;
+  gap: 18px;
+}
+.resultsSection {
+  flex: 1;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 24px;
+}
+.resultsPage,
+.resultsSection,
+.searchResults {
+  display: flex;
+  align-items: flex-start;
+}
+.searchResults {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 50px 80px;
+  justify-content: center;
+}
+.resultsPage {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: 16px;
+  color: #1262ae;
+  font-family: Roboto;
+}
+@media screen and (max-width: 1200px) {
+  .topHeader {
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+  }
+  .searchResults {
+    padding: 40px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .navigationMenu {
+    display: none;
+  }
+  .hamburgerMenuIcon {
+    display: flex;
+  }
+  .topHeader {
+    padding-left: 24px;
+    padding-right: 24px;
+    box-sizing: border-box;
+  }
+  .recentlyBooked {
+    width: 100%;
+  }
+  .resultsSection {
+    flex-direction: column;
+    gap: 80;
+  }
+  .searchResults {
+    padding: 20px 24px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 650px) {
+  .navigationRight {
+    display: flex;
+  }
+}

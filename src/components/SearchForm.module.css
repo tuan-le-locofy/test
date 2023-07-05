@@ -1,0 +1,156 @@
+.searchFlights {
+  flex: 1;
+  position: relative;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.radio,
+.radio1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.radio1 {
+  left: 106px;
+}
+.flightType {
+  position: relative;
+  width: 216.53px;
+  height: 38px;
+}
+.flightOptions,
+.formTitleGroup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.formTitleGroup {
+  align-self: stretch;
+  overflow: hidden;
+  padding: 5px;
+  gap: 5px;
+}
+.departureField {
+  align-self: stretch;
+  flex: 1;
+}
+.inputsRow {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.button {
+  position: relative;
+  font-size: 15px;
+  letter-spacing: 0.46px;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: Roboto;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  width: 146.98px;
+}
+.buttonGroup,
+.searchFlightsButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.searchFlightsButton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: #f99a0e;
+  border-radius: 4px;
+  width: 164px;
+  height: 56px;
+  overflow: hidden;
+  flex-shrink: 0;
+  transition: 0.3s;
+}
+.searchFlightsButton:hover {
+  background-color: #dc880b;
+}
+.buttonGroup {
+  padding: 5px;
+}
+.formInputsRow,
+.searchForm {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.searchForm {
+  border-radius: 10px;
+  background-color: #fff;
+  flex-direction: column;
+  padding: 20px;
+  gap: 4px;
+  text-align: left;
+  font-size: 20px;
+  color: #303030;
+  font-family: Roboto;
+}
+@media screen and (max-width: 1100px) {
+  .inputsRow {
+    width: 100%;
+    flex: unset;
+    align-self: stretch;
+  }
+  .searchFlightsButton {
+    margin-right: auto;
+  }
+  .buttonGroup {
+    width: 100%;
+    text-align: left;
+  }
+  .formInputsRow,
+  .searchForm {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 650px) {
+  .searchFlights {
+    width: 100%;
+    padding-bottom: 10px;
+    margin-bottom: 6px;
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #eaeaea;
+    flex: unset;
+    align-self: stretch;
+  }
+  .flightType {
+    width: 100% !important;
+  }
+  .flightOptions {
+    width: 100%;
+  }
+  .formTitleGroup {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .departureField {
+    flex: unset;
+    align-self: stretch;
+  }
+  .inputsRow {
+    flex-direction: column;
+  }
+  .searchFlightsButton {
+    width: 100% !important;
+  }
+  .searchForm {
+    margin-top: 20px;
+  }
+}

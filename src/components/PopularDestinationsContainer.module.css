@@ -1,0 +1,127 @@
+.mostPopularDestinations,
+.planYourNext {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.mostPopularDestinations {
+  font-size: 30px;
+  text-transform: capitalize;
+  color: #303030;
+}
+.titleContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 6px;
+}
+.viewAllDestinations {
+  position: relative;
+  font-size: 18px;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  font-family: Roboto;
+  color: #1262ae;
+  text-align: right;
+  display: inline-block;
+  width: 197.33px;
+  flex-shrink: 0;
+}
+.arrowRightIcon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.cardsContainer,
+.destinationsTitles,
+.viewAllTop {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.viewAllTop {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: #fff;
+  border-radius: 31px;
+  width: 231.38px;
+  align-items: flex-start;
+  gap: 10px;
+}
+.cardsContainer,
+.destinationsTitles {
+  align-self: stretch;
+  align-items: center;
+}
+.cardsContainer {
+  align-items: flex-start;
+  margin-left: -16px;
+  margin-right: -16px;
+}
+.viewAllDestinations1 {
+  position: relative;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  display: inline-block;
+  width: 197.33px;
+  flex-shrink: 0;
+}
+.popDestinationsMain,
+.viewAllBottom {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.viewAllBottom {
+  border-radius: 31px;
+  background-color: #fff;
+  width: 231.38px;
+  display: none;
+  flex-direction: row;
+  gap: 10px;
+  text-align: right;
+}
+.popDestinationsMain {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  text-align: left;
+  font-size: 18px;
+  color: #1262ae;
+  font-family: Roboto;
+}
+@media screen and (max-width: 1100px) {
+  .viewAllTop {
+    display: none;
+  }
+  .cardsContainer {
+    flex-wrap: wrap;
+    margin: -16px;
+  }
+  .viewAllDestinations1 {
+    width: auto;
+  }
+  .viewAllBottom {
+    display: flex;
+    margin-top: 16px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .mostPopularDestinations {
+    font-size: 22px;
+  }
+  .titleContainer {
+    flex: unset;
+    align-self: stretch;
+  }
+  .destinationsTitles {
+    flex-direction: column;
+    align-self: flex-start;
+  }
+}

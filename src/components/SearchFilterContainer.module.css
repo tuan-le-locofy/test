@@ -1,0 +1,107 @@
+.results {
+  position: relative;
+  letter-spacing: 0.26px;
+  display: inline-block;
+  width: 219.41px;
+}
+.frameChild {
+  position: relative;
+  width: 228px;
+  height: 1px;
+}
+.resultsParent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 228px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 24px;
+}
+.resultsSummary {
+  position: relative;
+  width: 228px;
+  height: 47px;
+  font-size: 20px;
+}
+.results1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  letter-spacing: 0.26px;
+  display: inline-block;
+  width: 65.26px;
+}
+.component1formcheckbox {
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+.component1formcheckbox1 {
+  position: absolute;
+  top: 86px;
+  left: 0;
+}
+.stops {
+  position: relative;
+  width: 296.62px;
+  height: 106px;
+}
+.results2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  letter-spacing: 0.26px;
+  display: inline-block;
+  width: 189.03px;
+}
+.bookingOptions {
+  position: relative;
+  width: 221px;
+  height: 106px;
+}
+.results3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  letter-spacing: 0.26px;
+  display: inline-block;
+  width: 198.04px;
+}
+.flightExperience {
+  position: relative;
+  width: 310.8px;
+  height: 106px;
+}
+.results4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  letter-spacing: 0.26px;
+  display: inline-block;
+  width: 87.77px;
+}
+.airlines {
+  position: relative;
+  width: 181px;
+  height: 106px;
+}
+.searchFilters {
+  width: 253px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 39px;
+  text-align: left;
+  font-size: 22px;
+  color: #57575d;
+  font-family: Roboto;
+}
+@media screen and (max-width: 1200px) {
+  .searchFilters {
+    display: none;
+  }
+}

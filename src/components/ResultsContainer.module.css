@@ -1,0 +1,177 @@
+.resultsImageIcon {
+  position: relative;
+  border-radius: 10px 0 0 10px;
+  width: 260px;
+  height: 220px;
+  object-fit: cover;
+}
+.freehandLosAngeles {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  font-size: 22px;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  display: inline-block;
+  width: 273.87px;
+}
+.bedInQuad,
+.div,
+.reviews {
+  position: absolute;
+  top: 0;
+  display: inline-block;
+}
+.bedInQuad {
+  left: 0;
+  letter-spacing: 0.02em;
+  color: #8e8e94;
+  width: 172.79px;
+}
+.div,
+.reviews {
+  left: 64.07px;
+  letter-spacing: 0.04em;
+  width: 138.7px;
+}
+.div {
+  left: 25.86px;
+  font-weight: 500;
+  width: 28.21px;
+}
+.review,
+.stars,
+.vectorIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.vectorIcon {
+  height: 84.21%;
+  width: 34.78%;
+  right: 65.22%;
+  bottom: 15.79%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.review,
+.stars {
+  width: 54.07px;
+  height: 19px;
+  color: #303030;
+}
+.review {
+  top: 57px;
+  width: 202.77px;
+  color: #1262af;
+}
+.result {
+  flex: 1;
+  position: relative;
+  height: 76px;
+}
+.resultsTitle {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.night,
+.s198 {
+  position: absolute;
+  letter-spacing: 0.02em;
+}
+.s198 {
+  top: 0;
+  left: 0;
+  text-transform: capitalize;
+}
+.night {
+  top: 8px;
+  left: 73px;
+  font-size: 14px;
+}
+.pricing,
+.viewDetailsButtonChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 112px;
+  height: 26px;
+}
+.viewDetailsButtonChild {
+  height: 100%;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  border-radius: 6px;
+  background-color: #1262af;
+}
+.searchFlights {
+  position: absolute;
+  top: calc(50% - 10.5px);
+  left: calc(50% - 54.5px);
+  font-size: 18px;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  font-family: Roboto;
+  color: #fff;
+  text-align: center;
+}
+.viewDetailsButton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 37.58px;
+  left: 0.49px;
+  width: 164px;
+  height: 46px;
+}
+.priceAndCta {
+  position: relative;
+  width: 164.49px;
+  height: 83.58px;
+  font-size: 22px;
+}
+.resultsCard,
+.resultsDetails {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.resultsDetails {
+  flex: 1;
+  flex-direction: column;
+  padding: 15px 12px 15px 0;
+  gap: 31px;
+}
+.resultsCard {
+  align-self: stretch;
+  border-radius: 10px;
+  background-color: rgba(18, 98, 175, 0.05);
+  flex-direction: row;
+  gap: 16px;
+  text-align: left;
+  font-size: 16px;
+  color: #303030;
+  font-family: Roboto;
+}
+@media screen and (max-width: 650px) {
+  .resultsImageIcon {
+    width: 100% !important;
+    border-radius: 10px !important;
+  }
+  .resultsDetails {
+    padding: 15px;
+    box-sizing: border-box;
+    flex: unset;
+    align-self: stretch;
+  }
+  .resultsCard {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,139 @@
+.airlinelogoIcon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+.singaporeAirlines {
+  position: relative;
+  line-height: 16px;
+}
+.airline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+}
+.price {
+  position: relative;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #191919;
+  text-align: right;
+}
+.airlinePrice {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.depcode {
+  position: relative;
+  font-weight: 600;
+}
+.depname {
+  position: relative;
+  font-size: 12px;
+  color: #7e8b97;
+}
+.departure {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2px;
+}
+.flightIcon {
+  position: relative;
+  width: 48.83px;
+  height: 11.96px;
+}
+.arrname {
+  position: relative;
+  font-size: 12px;
+  color: #7e8b97;
+  text-align: right;
+}
+.arrival,
+.locations {
+  display: flex;
+  justify-content: flex-start;
+}
+.arrival {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+.locations {
+  align-self: stretch;
+  border-radius: 4px;
+  background-color: #f8f9fb;
+  flex-direction: row;
+  padding: 8px;
+  align-items: center;
+  gap: 7px;
+  font-size: 16px;
+  color: #1262af;
+}
+.classIcon {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.class,
+.details {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.class {
+  flex: 1;
+  align-items: flex-start;
+  gap: 8px;
+}
+.details {
+  align-self: stretch;
+  border-radius: 4px;
+  align-items: center;
+  gap: 20px;
+}
+.expedia {
+  color: #457eff;
+}
+.timeago {
+  position: relative;
+  line-height: 16px;
+  font-weight: 600;
+  color: #fba403;
+}
+.bookingCard,
+.provider {
+  align-self: stretch;
+  display: flex;
+}
+.provider {
+  border-top: 1px solid #eaeaea;
+  flex-direction: row;
+  padding: 8px 0 0;
+  align-items: center;
+  justify-content: space-between;
+}
+.bookingCard {
+  border-radius: 6px;
+  border: 1px solid #eaeaea;
+  flex-direction: column;
+  padding: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  text-align: left;
+  font-size: 12px;
+  color: #7e8b97;
+  font-family: Inter;
+}
