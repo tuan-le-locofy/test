@@ -1,6 +1,6 @@
 .hotelsPage {
   position: relative;
-  background-color: #fff;
+  background-color: var(--background-paper);
   width: 100%;
   overflow: hidden;
   display: flex;

@@ -1,142 +1,110 @@
 .resultsImageIcon {
   position: relative;
-  border-radius: 10px 0 0 10px;
+  border-radius: var(--br-3xs) 0 0 var(--br-3xs);
   width: 260px;
   height: 220px;
   object-fit: cover;
 }
-.freehandLosAngeles {
-  position: absolute;
-  top: 25px;
-  left: 0;
-  font-size: 22px;
-  letter-spacing: 0.04em;
-  text-transform: capitalize;
-  display: inline-block;
-  width: 273.87px;
-}
 .bedInQuad,
-.div,
-.reviews {
-  position: absolute;
-  top: 0;
-  display: inline-block;
+.freehandLosAngeles {
+  align-self: stretch;
+  position: relative;
 }
 .bedInQuad {
-  left: 0;
   letter-spacing: 0.02em;
-  color: #8e8e94;
-  width: 172.79px;
+  color: var(--color-gray-100);
 }
-.div,
-.reviews {
-  left: 64.07px;
+.freehandLosAngeles {
+  margin: 0;
+  font-size: var(--font-size-3xl);
   letter-spacing: 0.04em;
-  width: 138.7px;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-family: inherit;
+}
+.vectorIcon {
+  position: relative;
+  width: 18.81px;
+  height: 16px;
 }
 .div {
-  left: 25.86px;
+  position: relative;
+  letter-spacing: 0.04em;
   font-weight: 500;
+  display: inline-block;
   width: 28.21px;
+  flex-shrink: 0;
 }
-.review,
-.stars,
-.vectorIcon {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.vectorIcon {
-  height: 84.21%;
-  width: 34.78%;
-  right: 65.22%;
-  bottom: 15.79%;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-}
-.review,
 .stars {
   width: 54.07px;
   height: 19px;
-  color: #303030;
-}
-.review {
-  top: 57px;
-  width: 202.77px;
-  color: #1262af;
-}
-.result {
-  flex: 1;
-  position: relative;
-  height: 76px;
-}
-.resultsTitle {
-  align-self: stretch;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
+  gap: var(--gap-6xs);
+}
+.reviews {
+  position: relative;
+  letter-spacing: 0.04em;
+  color: var(--color-cornflowerblue-200);
+  display: inline-block;
+  width: 138.7px;
+  flex-shrink: 0;
+}
+.review {
+  align-self: stretch;
+  height: 19px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-4xs);
+}
+.result,
+.resultsTitle {
+  display: flex;
+  align-items: flex-start;
+}
+.result {
+  width: 273.87px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-7xs);
+}
+.resultsTitle {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .night,
 .s198 {
-  position: absolute;
+  position: relative;
   letter-spacing: 0.02em;
 }
 .s198 {
-  top: 0;
-  left: 0;
   text-transform: capitalize;
 }
 .night {
-  top: 8px;
-  left: 73px;
-  font-size: 14px;
+  font-size: var(--font-size-sm);
 }
-.pricing,
-.viewDetailsButtonChild {
-  position: absolute;
-  top: 0;
-  left: 0;
+.pricing {
   width: 112px;
   height: 26px;
-}
-.viewDetailsButtonChild {
-  height: 100%;
-  width: 100%;
-  right: 0;
-  bottom: 0;
-  border-radius: 6px;
-  background-color: #1262af;
-}
-.searchFlights {
-  position: absolute;
-  top: calc(50% - 10.5px);
-  left: calc(50% - 54.5px);
-  font-size: 18px;
-  letter-spacing: 0.04em;
-  font-weight: 500;
-  font-family: Roboto;
-  color: #fff;
-  text-align: center;
-}
-.viewDetailsButton {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  position: absolute;
-  top: 37.58px;
-  left: 0.49px;
-  width: 164px;
-  height: 46px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--gap-12xs);
 }
 .priceAndCta {
-  position: relative;
   width: 164.49px;
   height: 83.58px;
-  font-size: 22px;
+  flex-direction: column;
+  gap: var(--gap-2xs);
+  font-size: var(--font-size-3xl);
 }
+.priceAndCta,
 .resultsCard,
 .resultsDetails {
   display: flex;
@@ -146,19 +114,19 @@
 .resultsDetails {
   flex: 1;
   flex-direction: column;
-  padding: 15px 12px 15px 0;
-  gap: 31px;
+  padding: var(--padding-mini) var(--padding-xs) var(--padding-mini) 0;
+  gap: var(--gap-12xl);
 }
 .resultsCard {
   align-self: stretch;
-  border-radius: 10px;
-  background-color: rgba(18, 98, 175, 0.05);
+  border-radius: var(--br-3xs);
+  background-color: var(--color-cornflowerblue-400);
   flex-direction: row;
-  gap: 16px;
+  gap: var(--gap-base);
   text-align: left;
-  font-size: 16px;
-  color: #303030;
-  font-family: Roboto;
+  font-size: var(--typography-body-1-size);
+  color: var(--color-darkslategray-600);
+  font-family: var(--typography-body-1);
 }
 @media screen and (max-width: 650px) {
   .resultsImageIcon {
@@ -166,7 +134,7 @@
     border-radius: 10px !important;
   }
   .resultsDetails {
-    padding: 15px;
+    padding: var(--padding-mini);
     box-sizing: border-box;
     flex: unset;
     align-self: stretch;

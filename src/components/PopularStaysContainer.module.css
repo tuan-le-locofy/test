@@ -1,16 +1,8 @@
 .popularStays1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  letter-spacing: 0.04em;
-  text-transform: capitalize;
-  display: inline-block;
-  width: 1105.34px;
-}
-.popularStaysTitle {
   flex: 1;
   position: relative;
-  height: 35px;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
 }
 .arrowRightIcon,
 .viewAllStays {
@@ -18,11 +10,11 @@
   flex-shrink: 0;
 }
 .viewAllStays {
-  font-size: 18px;
+  font-size: var(--font-size-lg);
   letter-spacing: 0.04em;
   font-weight: 500;
-  font-family: Roboto;
-  color: #1262ae;
+  font-family: var(--typography-body-1);
+  color: var(--color-cornflowerblue-300);
   text-align: right;
   display: inline-block;
   width: 140.66px;
@@ -36,13 +28,14 @@
   cursor: pointer;
   border: 0;
   padding: 0;
-  background-color: #fff;
-  border-radius: 31px;
+  background-color: var(--background-paper);
+  flex: 1;
+  border-radius: var(--br-12xl);
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 10px;
+  gap: var(--gap-3xs);
 }
 .hotelCards,
 .popularStaysHeader {
@@ -56,7 +49,8 @@
   justify-content: flex-start;
   margin-left: -12px;
   margin-right: -12px;
-  font-size: 16px;
+  text-align: left;
+  font-size: var(--typography-body-1-size);
 }
 .viewAllStays1 {
   position: relative;
@@ -72,28 +66,28 @@
   justify-content: flex-start;
 }
 .mobileViewAllStays {
-  border-radius: 31px;
-  background-color: #fff;
+  border-radius: var(--br-12xl);
+  background-color: var(--background-paper);
   display: none;
   flex-direction: row;
-  gap: 10px;
+  gap: var(--gap-3xs);
   text-align: right;
-  font-size: 18px;
-  color: #1262ae;
+  font-size: var(--font-size-lg);
+  color: var(--color-cornflowerblue-300);
 }
 .popularStays {
   align-self: stretch;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  text-align: left;
-  font-size: 30px;
-  color: #303030;
-  font-family: Roboto;
+  gap: var(--gap-xl);
+  text-align: center;
+  font-size: var(--font-size-11xl);
+  color: var(--color-darkslategray-600);
+  font-family: var(--typography-body-1);
 }
 @media screen and (max-width: 1200px) {
   .hotelCards {
-    padding-right: 40px;
+    padding-right: var(--padding-21xl);
     box-sizing: border-box;
     margin-left: -12px;
     margin-right: -50px;
@@ -117,7 +111,7 @@
 }
 @media screen and (max-width: 650px) {
   .popularStays1 {
-    font-size: 22px;
+    font-size: var(--font-size-3xl);
   }
   .hotelCards {
     flex-direction: column;

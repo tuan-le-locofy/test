@@ -1,5 +1,6 @@
 .airlinelogoIcon {
   position: relative;
+  border-radius: var(--br-9xs);
   width: 24px;
   height: 24px;
 }
@@ -12,14 +13,14 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  gap: 4px;
+  gap: var(--gap-9xs);
 }
 .price {
   position: relative;
-  font-size: 16px;
+  font-size: var(--typography-body-1-size);
   line-height: 24px;
   font-weight: 600;
-  color: #191919;
+  color: var(--color-gray-200);
   text-align: right;
 }
 .airlinePrice {
@@ -35,8 +36,8 @@
 }
 .depname {
   position: relative;
-  font-size: 12px;
-  color: #7e8b97;
+  font-size: var(--font-size-xs);
+  color: var(--color-lightslategray);
 }
 .departure {
   flex: 1;
@@ -44,7 +45,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 2px;
+  gap: var(--gap-11xs);
 }
 .flightIcon {
   position: relative;
@@ -53,8 +54,8 @@
 }
 .arrname {
   position: relative;
-  font-size: 12px;
-  color: #7e8b97;
+  font-size: var(--font-size-xs);
+  color: var(--color-lightslategray);
   text-align: right;
 }
 .arrival,
@@ -66,18 +67,18 @@
   flex: 1;
   flex-direction: column;
   align-items: flex-end;
-  gap: 2px;
+  gap: var(--gap-11xs);
 }
 .locations {
   align-self: stretch;
-  border-radius: 4px;
-  background-color: #f8f9fb;
+  border-radius: var(--br-9xs);
+  background-color: var(--color-whitesmoke-100);
   flex-direction: row;
-  padding: 8px;
+  padding: var(--padding-5xs);
   align-items: center;
-  gap: 7px;
-  font-size: 16px;
-  color: #1262af;
+  gap: var(--gap-6xs);
+  font-size: var(--typography-body-1-size);
+  color: var(--color-cornflowerblue-200);
 }
 .classIcon {
   position: relative;
@@ -95,22 +96,31 @@
 .class {
   flex: 1;
   align-items: flex-start;
-  gap: 8px;
+  gap: var(--gap-5xs);
 }
 .details {
   align-self: stretch;
-  border-radius: 4px;
+  border-radius: var(--br-9xs);
   align-items: center;
-  gap: 20px;
+  gap: var(--gap-xl);
+}
+.bookedOn {
+  color: var(--color-lightslategray);
 }
 .expedia {
-  color: #457eff;
+  color: var(--studio-darkmode-maincta-457eff);
 }
+.provider1,
 .timeago {
   position: relative;
+  font-size: var(--font-size-xs);
   line-height: 16px;
+  font-family: var(--font-inter);
+  text-align: left;
+}
+.timeago {
   font-weight: 600;
-  color: #fba403;
+  color: var(--color-orange-100);
 }
 .bookingCard,
 .provider {
@@ -118,22 +128,25 @@
   display: flex;
 }
 .provider {
-  border-top: 1px solid #eaeaea;
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-5xs) 0 0;
+  background-color: transparent;
+  border-top: 1px solid var(--color-whitesmoke-200);
   flex-direction: row;
-  padding: 8px 0 0;
   align-items: center;
   justify-content: space-between;
 }
 .bookingCard {
-  border-radius: 6px;
-  border: 1px solid #eaeaea;
+  border-radius: var(--br-7xs);
+  border: 1px solid var(--color-whitesmoke-200);
   flex-direction: column;
-  padding: 10px;
+  padding: var(--padding-3xs);
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 10px;
+  gap: var(--gap-3xs);
   text-align: left;
-  font-size: 12px;
-  color: #7e8b97;
-  font-family: Inter;
+  font-size: var(--font-size-xs);
+  color: var(--color-lightslategray);
+  font-family: var(--font-inter);
 }

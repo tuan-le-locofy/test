@@ -13,72 +13,69 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  gap: 7px;
+  gap: var(--gap-6xs);
 }
 .am,
 .sin {
-  position: absolute;
-  left: 0;
+  position: relative;
   display: inline-block;
 }
 .am {
-  width: 100%;
-  top: 0;
   letter-spacing: 0.32px;
   font-weight: 500;
+  width: 93px;
 }
 .sin {
-  width: 79.51%;
-  top: 63.46%;
-  font-size: 16px;
+  font-size: var(--typography-body-1-size);
   letter-spacing: 0.26px;
-  color: #646468;
+  color: var(--color-dimgray-100);
+  width: 73.94px;
 }
 .departureDetails {
-  position: relative;
   width: 93px;
   height: 52px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
 }
 .flighticon {
-  position: absolute;
-  height: 27.46%;
-  width: 88.52%;
-  top: 0;
-  right: 5.5%;
-  bottom: 72.54%;
-  left: 5.98%;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
+  position: relative;
+  width: 107.11px;
+  height: 15.1px;
 }
 .h55mNonStop {
-  position: absolute;
-  top: 65.45%;
-  left: 0;
+  position: relative;
   letter-spacing: 0.21px;
 }
 .flightduration {
-  position: relative;
   width: 121px;
   height: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-xl);
   text-align: center;
-  font-size: 16px;
-  color: #8e8e94;
+  font-size: var(--typography-body-1-size);
+  color: var(--color-gray-100);
 }
-.sin1 {
-  position: absolute;
-  width: 81.25%;
-  top: 63.46%;
-  left: 17.65%;
-  font-size: 16px;
-  letter-spacing: 0.26px;
-  color: #646468;
+.am1 {
+  position: relative;
+  letter-spacing: 0.32px;
+  font-weight: 500;
   display: inline-block;
+  width: 91px;
 }
 .arrivalDetails {
-  position: relative;
   width: 91px;
   height: 52px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
   text-align: right;
 }
 .flightDetailsSection {
@@ -87,8 +84,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  font-size: 21px;
-  color: #1262af;
+  font-size: var(--font-size-2xl);
+  color: var(--color-cornflowerblue-200);
 }
 .priceSectionChild {
   position: relative;
@@ -110,20 +107,20 @@
 .priceSection {
   width: 128px;
   text-align: center;
-  font-size: 24px;
-  color: #fba403;
+  font-size: var(--font-size-5xl);
+  color: var(--color-orange-100);
 }
 .flightCard {
   align-self: stretch;
-  border-radius: 6px;
-  background-color: #fff;
-  border: 0.7px solid #cecece;
-  padding: 0 6px 0 25px;
-  gap: 50px;
+  border-radius: var(--br-7xs);
+  background-color: var(--background-paper);
+  border: 0.7px solid var(--color-lightgray);
+  padding: 0 var(--padding-7xs) 0 var(--padding-6xl);
+  gap: var(--gap-31xl);
   text-align: left;
-  font-size: 16px;
-  color: #57575d;
-  font-family: Roboto;
+  font-size: var(--typography-body-1-size);
+  color: var(--color-dimgray-300);
+  font-family: var(--typography-body-1);
 }
 @media screen and (max-width: 1100px) {
   .airlineSection {
@@ -150,23 +147,23 @@
   }
   .flightCard {
     flex-direction: column;
-    padding: 20px;
+    padding: var(--padding-xl);
     box-sizing: border-box;
   }
 }
 @media screen and (max-width: 428px) {
   .am,
   .sin {
-    font-size: 16px;
+    font-size: var(--typography-body-1-size);
   }
   .departureDetails {
     width: 80px;
   }
   .h55mNonStop {
-    font-size: 13px;
+    font-size: var(--font-size-smi);
   }
-  .sin1 {
-    font-size: 16px;
+  .am1 {
+    font-size: var(--typography-body-1-size);
   }
   .arrivalDetails {
     width: 80px;

@@ -1,36 +1,36 @@
 .results {
   flex: 1;
-  position: relative;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
   font-weight: 500;
 }
+.filters1,
+.results {
+  position: relative;
+  letter-spacing: 0.04em;
+}
 .filtersIcon {
-  position: absolute;
-  top: 0;
-  left: 62px;
+  position: relative;
   width: 24px;
   height: 24px;
   overflow: hidden;
+  flex-shrink: 0;
 }
-.filters1 {
-  position: absolute;
-  top: 2.5px;
-  left: 0;
-  letter-spacing: 0.04em;
+.filters,
+.resultsSumamry {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 .filters {
-  position: relative;
   width: 86px;
   height: 24px;
-  font-size: 16px;
+  align-items: center;
+  gap: var(--gap-sm);
+  font-size: var(--typography-body-1-size);
 }
 .resultsSumamry {
   align-self: stretch;
-  display: flex;
-  flex-direction: row;
   align-items: flex-start;
-  justify-content: flex-start;
 }
 .map {
   border: 0;
@@ -45,7 +45,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 12px;
+  gap: var(--gap-xs);
 }
 .map1 {
   border: 0;
@@ -60,22 +60,21 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 23px;
-  font-size: 16px;
-  color: #8e8e94;
+  gap: var(--gap-4xl);
+  font-size: var(--typography-body-1-size);
 }
 .hotelResults {
   flex-direction: column;
-  padding: 50px 80px;
-  gap: 20px;
+  padding: var(--padding-31xl) var(--padding-61xl);
+  gap: var(--gap-xl);
   text-align: left;
-  font-size: 18px;
-  color: #303030;
-  font-family: Roboto;
+  font-size: var(--font-size-lg);
+  color: var(--color-darkslategray-600);
+  font-family: var(--typography-body-1);
 }
 @media screen and (max-width: 1200px) {
   .hotelResults {
-    padding: 40px;
+    padding: var(--padding-21xl);
     box-sizing: border-box;
   }
 }
@@ -91,12 +90,12 @@
     display: none;
   }
   .hotelResults {
-    padding: 30px 24px;
+    padding: var(--padding-11xl) var(--padding-5xl);
     box-sizing: border-box;
   }
 }
 @media screen and (max-width: 650px) {
   .resultCardsCol {
-    gap: 20px;
+    gap: var(--gap-xl);
   }
 }

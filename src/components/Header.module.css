@@ -1,58 +1,58 @@
 .webScreenIcon {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
+  position: relative;
+  width: 173.69px;
+  height: 32px;
   cursor: pointer;
-}
-.symbols {
-  position: absolute;
-  height: 96.97%;
-  width: 99.82%;
-  top: 1.59%;
-  right: 0.18%;
-  bottom: 1.44%;
-  left: 0;
 }
 .fickleflightLogo {
   width: 174px;
   height: 33px;
   overflow: hidden;
   flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  cursor: pointer;
 }
-.explore,
-.fickleflightLogo,
-.hotels,
-.offers {
+.explore {
   position: relative;
   cursor: pointer;
 }
 .hotels,
+.navigationMenu,
 .offers {
+  text-align: left;
+  font-size: var(--font-size-sm);
+  font-family: var(--typography-body-1);
+}
+.hotels {
+  cursor: pointer;
   border: 0;
   padding: 0;
   background-color: transparent;
-  font-size: 14px;
-  font-family: Roboto;
-  color: #1262af;
-  text-align: left;
+  position: relative;
+  color: var(--color-cornflowerblue-200);
   display: inline-block;
 }
+.navigationMenu,
 .offers {
-  color: #424242;
+  color: var(--color-darkslategray-500);
+}
+.offers {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  display: inline-block;
 }
 .navigationMenu {
+  margin: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-end;
-  gap: 30px;
+  justify-content: space-between;
 }
 .hamburgerMenuIcon {
   display: none;
@@ -66,7 +66,7 @@
   flex-shrink: 0;
 }
 .unsplashd1upkifd04aIcon {
-  border-radius: 38px;
+  border-radius: var(--br-19xl);
   width: 36px;
   height: 36px;
   object-fit: cover;
@@ -76,11 +76,11 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: var(--gap-xs);
 }
 .navigationRight {
   justify-content: flex-end;
-  gap: 36px;
+  gap: var(--gap-17xl);
 }
 .navigationRight,
 .topContainer,
@@ -95,24 +95,20 @@
 }
 .topHeader {
   align-self: stretch;
-  background-color: #fff;
+  background-color: var(--background-paper);
   height: 77px;
-  padding: 22px 80px;
+  padding: var(--padding-3xl) var(--padding-61xl);
   box-sizing: border-box;
   justify-content: center;
   position: sticky;
   width: 100%;
   top: 0;
   background: #fff;
-  text-align: left;
-  font-size: 14px;
-  color: #424242;
-  font-family: Roboto;
 }
 @media screen and (max-width: 1200px) {
   .topHeader {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: var(--padding-21xl);
+    padding-right: var(--padding-21xl);
     box-sizing: border-box;
   }
 }
@@ -124,8 +120,8 @@
     display: flex;
   }
   .topHeader {
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: var(--padding-5xl);
+    padding-right: var(--padding-5xl);
     box-sizing: border-box;
   }
 }

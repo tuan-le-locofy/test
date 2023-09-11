@@ -1,28 +1,15 @@
-.symbolsIcon {
-  position: absolute;
-  height: 96.97%;
-  width: 99.82%;
-  top: 1.59%;
-  right: 0.18%;
-  bottom: 1.44%;
-  left: 0;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-}
-.fickleflightLogo {
-  border: 0;
-  padding: 0;
-  background-color: transparent;
+.fickleflightLogoIcon {
+  position: relative;
   width: 174px;
   height: 33px;
   overflow: hidden;
   flex-shrink: 0;
+  cursor: pointer;
 }
 .explore,
-.fickleflightLogo,
 .offers,
 .search {
+  flex: 1;
   position: relative;
   cursor: pointer;
 }
@@ -31,21 +18,22 @@
   border: 0;
   padding: 0;
   background-color: transparent;
-  font-size: 14px;
-  font-family: Roboto;
-  color: #1262af;
+  font-size: var(--font-size-sm);
+  font-family: var(--typography-body-1);
+  color: var(--color-cornflowerblue-200);
   text-align: left;
   display: inline-block;
 }
 .offers {
-  color: #424242;
+  color: var(--color-darkslategray-500);
 }
 .navigationMenu {
+  flex: 1;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-  gap: 30px;
+  gap: var(--gap-11xl);
 }
 .hamburgerMenuIcon {
   display: none;
@@ -59,21 +47,23 @@
   flex-shrink: 0;
 }
 .unsplashd1upkifd04aIcon {
-  border-radius: 38px;
+  border-radius: var(--br-19xl);
   width: 36px;
   height: 36px;
   object-fit: cover;
 }
 .accountSection {
+  flex: 1;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: var(--gap-xs);
 }
 .navigationRight {
+  width: 368px;
   justify-content: flex-end;
-  gap: 36px;
+  gap: var(--gap-17xl);
 }
 .navigationRight,
 .topContainer,
@@ -88,9 +78,9 @@
 }
 .topHeader {
   align-self: stretch;
-  background-color: #fff;
+  background-color: var(--background-paper);
   height: 77px;
-  padding: 22px 80px;
+  padding: var(--padding-3xl) var(--padding-61xl);
   box-sizing: border-box;
   justify-content: center;
   position: sticky;
@@ -98,9 +88,9 @@
   top: 0;
   background: #fff;
   text-align: left;
-  font-size: 14px;
-  color: #424242;
-  font-family: Roboto;
+  font-size: var(--font-size-sm);
+  color: var(--color-darkslategray-500);
+  font-family: var(--typography-body-1);
 }
 .recentlyBookedTitleChild,
 .results {
@@ -123,29 +113,20 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 14px;
-}
-.showMore1 {
-  position: relative;
-  line-height: 16px;
-}
-.iconBack {
-  position: relative;
-  width: 16px;
-  height: 16px;
-  overflow: hidden;
-  flex-shrink: 0;
+  gap: var(--gap-sm);
 }
 .showMore {
+  border: 0;
+  font-family: var(--font-inter);
+  font-size: var(--font-size-xs);
+  background-color: rgba(18, 98, 175, 0.06);
   align-self: stretch;
   border-radius: 3px;
-  background-color: rgba(18, 98, 175, 0.06);
   display: flex;
   flex-direction: row;
-  padding: 7px 10px;
+  padding: 7px var(--padding-3xs);
   align-items: center;
-  justify-content: center;
-  gap: 4px;
+  justify-content: space-between;
 }
 .bookingCards,
 .recentlyBooked {
@@ -156,16 +137,13 @@
 }
 .bookingCards {
   align-self: stretch;
-  gap: 12px;
-  font-size: 12px;
-  color: #1262af;
-  font-family: Inter;
+  gap: var(--gap-xs);
 }
 .recentlyBooked {
-  border-radius: 6px;
-  background-color: #fff;
+  border-radius: var(--br-7xs);
+  background-color: var(--background-paper);
   width: 257px;
-  padding: 0 0 20px;
+  padding: 0 0 var(--padding-xl);
   box-sizing: border-box;
   gap: 18px;
 }
@@ -173,7 +151,7 @@
   flex: 1;
   flex-direction: row;
   justify-content: flex-start;
-  gap: 24px;
+  gap: var(--gap-5xl);
 }
 .resultsPage,
 .resultsSection,
@@ -184,29 +162,29 @@
 .searchResults {
   align-self: stretch;
   flex-direction: row;
-  padding: 50px 80px;
+  padding: var(--padding-31xl) var(--padding-61xl);
   justify-content: center;
+  text-align: left;
+  font-size: var(--typography-body-1-size);
+  color: var(--color-cornflowerblue-300);
+  font-family: var(--typography-body-1);
 }
 .resultsPage {
   position: relative;
-  background-color: #fff;
+  background-color: var(--background-paper);
   width: 100%;
   overflow: hidden;
   flex-direction: column;
   justify-content: flex-start;
-  text-align: left;
-  font-size: 16px;
-  color: #1262ae;
-  font-family: Roboto;
 }
 @media screen and (max-width: 1200px) {
   .topHeader {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: var(--padding-21xl);
+    padding-right: var(--padding-21xl);
     box-sizing: border-box;
   }
   .searchResults {
-    padding: 40px;
+    padding: var(--padding-21xl);
     box-sizing: border-box;
   }
 }
@@ -218,8 +196,8 @@
     display: flex;
   }
   .topHeader {
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: var(--padding-5xl);
+    padding-right: var(--padding-5xl);
     box-sizing: border-box;
   }
   .recentlyBooked {
@@ -230,7 +208,7 @@
     gap: 80;
   }
   .searchResults {
-    padding: 20px 24px;
+    padding: var(--padding-xl) var(--padding-5xl);
     box-sizing: border-box;
   }
 }

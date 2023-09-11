@@ -1,104 +1,113 @@
+.frameChild,
 .results {
+  align-self: stretch;
   position: relative;
+}
+.results {
   letter-spacing: 0.26px;
-  display: inline-block;
-  width: 219.41px;
 }
 .frameChild {
-  position: relative;
-  width: 228px;
+  max-width: 100%;
+  overflow: hidden;
   height: 1px;
+  flex-shrink: 0;
 }
 .resultsParent {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 228px;
+  align-self: stretch;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 24px;
-}
-.resultsSummary {
-  position: relative;
-  width: 228px;
-  height: 47px;
-  font-size: 20px;
+  gap: var(--gap-5xl);
+  font-size: var(--font-size-xl);
 }
 .results1 {
-  position: absolute;
-  top: 0;
-  left: 0;
+  margin: 0;
+  position: relative;
+  font-size: inherit;
   letter-spacing: 0.26px;
+  font-weight: 700;
+  font-family: inherit;
   display: inline-block;
   width: 65.26px;
 }
 .component1formcheckbox {
-  position: absolute;
-  top: 50px;
-  left: 0;
+  align-self: stretch;
 }
-.component1formcheckbox1 {
-  position: absolute;
-  top: 86px;
-  left: 0;
-}
-.stops {
-  position: relative;
-  width: 296.62px;
-  height: 106px;
-}
-.results2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  letter-spacing: 0.26px;
-  display: inline-block;
-  width: 189.03px;
-}
-.bookingOptions {
-  position: relative;
-  width: 221px;
-  height: 106px;
-}
-.results3 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  letter-spacing: 0.26px;
-  display: inline-block;
-  width: 198.04px;
-}
-.flightExperience {
-  position: relative;
-  width: 310.8px;
-  height: 106px;
-}
-.results4 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  letter-spacing: 0.26px;
-  display: inline-block;
-  width: 87.77px;
-}
-.airlines {
-  position: relative;
-  width: 181px;
-  height: 106px;
-}
-.searchFilters {
-  width: 253px;
+.frame {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 39px;
+  gap: var(--gap-base);
+}
+.frame,
+.results2,
+.stops {
+  align-self: stretch;
+}
+.stops {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+}
+.results2 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: 0.26px;
+  font-weight: 700;
+  font-family: inherit;
+}
+.frame2 {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.results4 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: 0.26px;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  width: 87.77px;
+}
+.frame3 {
+  width: 181px;
+  height: 56px;
+  overflow: hidden;
+  flex-shrink: 0;
+  gap: var(--gap-base);
+}
+.airlines,
+.frame3,
+.searchFilters {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.airlines {
+  align-self: stretch;
+  height: 106px;
+  gap: var(--gap-5xl);
+}
+.searchFilters {
+  width: 253px;
+  gap: var(--gap-20xl);
   text-align: left;
-  font-size: 22px;
-  color: #57575d;
-  font-family: Roboto;
+  font-size: var(--font-size-3xl);
+  color: var(--color-dimgray-300);
+  font-family: var(--typography-body-1);
 }
 @media screen and (max-width: 1200px) {
   .searchFilters {
